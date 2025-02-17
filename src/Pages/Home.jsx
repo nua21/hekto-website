@@ -8,12 +8,11 @@ import Trending from '../Components/Trending'
 import Discount from '../Components/Discount'
 import TopCategories from '../Components/TopCategories'
 import Navbar from '../Components/Navbar'
-import Pages from './Pages'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 import Subscribe from '../Components/Subscribe'
 import LatestBlog from '../Components/LatestBlog'
-import Subscribe2 from '../Components/Subscribe2'
+import Extra from '../Components/Extra'
 
 
 const Home = () => {
@@ -30,7 +29,7 @@ const Home = () => {
     <Discount/>
     <TopCategories/>
     <Subscribe/>
-    <Subscribe2/>
+    <Extra/>
     <LatestBlog/>
     <Footer/>
     </>

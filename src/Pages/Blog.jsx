@@ -1,10 +1,19 @@
 import React from 'react'
+import Reusable from '../Components/Reusable'
+import Header from '../Components/Header'
+import Footer from '../Components/Footer'
+import BlogPage from '../Components/BlogPage'
+import Extra from '../Components/Extra'
 
 const Blog = () => {
   return (
-    <div>
-      <h1 className='bg-blue-900'>come on come on turn the radio on </h1>
-    </div>
+    <>
+        <Header/>
+        <Reusable  title="Blog Page" titlename= ". Blog Page"/>
+        <BlogPage/>
+        <Extra/>
+        <Footer/>
+    </>
   )
 }
 

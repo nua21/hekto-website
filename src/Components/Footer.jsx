@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
             <div className='relative pb-6'>
               <input type="email" placeholder='Enter Email Address' className='w-full h-12 rounded-md pl-5 outline-none' />
-              <button className='w-32 h-12 bg-[#FB2E86] absolute top-0 right-0 rounded font-Lato
+              <button className='w-32 h-12 bg-pinki absolute top-0 right-0 rounded font-Lato
           text-[#FFFFFF]'>Sign Up</button>
             </div>
             <div>

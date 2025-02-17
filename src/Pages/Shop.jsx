@@ -1,10 +1,17 @@
 import React from 'react'
+import Reusable from '../Components/Reusable'
+import Extra from '../Components/Extra'
+import ShopGridDefault from '../Components/ShopGridDefault'
 
 const Shop = () => {
   return (
-    <div>
-      <h1 className='bg-yellow-700'>HOOOO</h1>
-    </div>
+    <>
+      <Reusable title="Shop Grid Default " titlename=" . Shop Grid Default"/>
+      <ShopGridDefault/>
+      <Extra/>
+    
+    
+    </>
   )
 }
 

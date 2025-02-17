@@ -1,9 +1,16 @@
 /* eslint-disable react/jsx-key */
 import React, { useContext } from 'react'
-import Chair from '../assets/chair.png'
 import { apiData } from './ContextApi'
+import Slider from "react-slick";
 
 const Featured = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 3
+      };
 
     const data = useContext(apiData);
 
@@ -14,9 +21,10 @@ const Featured = () => {
             <div className="text-center mb-16">
                 <h2 className='font-josef text-[46px] font-bold text-[#1A0B5B]'>Featured Products</h2>
             </div>
-            <div className="flex flex-wrap justify-between">
+            <div className="">
+                <Slider {...settings}>
                 {data.map((item)=>(
-                    <div className="w-[23%] shadow-lg mb-5">
+                    <div className="!w-[95%] shadow-lg mb-5">
                         <div className="bg-[#F6F7FB] flex justify-center pt-10 pb-8">
                             <img src={item.thumbnail} alt="pictures" />
                         </div>
@@ -27,6 +35,7 @@ const Featured = () => {
                         </div>
                     </div>
                 ))}
+                </Slider>
 
             </div>
         </div>
